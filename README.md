@@ -16,7 +16,7 @@ Based on demo code written in class by Sheyna Watkins
 
 ### Lighthouse Accessibility Report Score
 
-![Lighthouse Report](lighthouse-screenshot.png)
+![Lighthouse Report](img/lighthouse-screenshot.png)
 
 ### Reflections and Comments
 
