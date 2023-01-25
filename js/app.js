@@ -13,11 +13,11 @@ let nateChild = prompt('Does Nate have a son named Jack?').toLowerCase();
 console.log('Does Nate have a son named Jack: ' + nateChild);
 
 if ( nateChild === 'yes' || nateChild === 'y' ) {
-  // console.log('Correct, Jack is Nate's 1 year old son.');
-  window.alert('Correct, Jack is Nates 1 year old son.');
+  // console.log('Correct, Jack is Nate\'s 1 year old son.');
+  window.alert('Correct, Jack is Nate\'s 1 year old son.');
 } else if ( nateChild === 'no' || nateChild === 'n' ) {
-  // console.log('Wrong, Nate's son is named Jack.');
-  window.alert('Wrong, Nates son is named Jack.');
+  // console.log('Wrong, Nate\'s son is named Jack.');
+  window.alert('Wrong, Nate\'s son is named Jack.');
 } else {
   // console.log('Please try again. Acceptable answers are yes or no.');
   window.alert('Please try again. Acceptable answers are yes or no.');
@@ -73,8 +73,8 @@ let nateRace = prompt('Does Nate plan to enter a motorcycle race? (Yes/No)').toL
 console.log('Does Nate plan to enter a motorcycle race: ' + nateRace);
 
 if ( nateRace === 'yes' || nateRace === 'y' ) {
-  // console.log('Wrong! Nate can't afford motorcycle racing, he only races triathlons.');
-  window.alert('Wrong! Nate cant afford motorcycle racing, he only races triathlons.');
+  // console.log('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
+  window.alert('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
 } else if ( nateRace === 'no' || nateRace === 'n' ) {
   // console.log('Correct, Nate actually races triathlons.');
   window.alert('Correct, Nate actually races triathlons.');

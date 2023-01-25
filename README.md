@@ -16,7 +16,7 @@ I built a page about myself which gives the user a short pop quiz asking a serie
 
 ### Lighthouse Accessibility Report Score
 
-![Lighthouse Report](img/lighthouse-screenshot.png)
+[Lighthouse Report](img/lighthouse-screenshot.png)
 
 ### Reflections and Comments
 
