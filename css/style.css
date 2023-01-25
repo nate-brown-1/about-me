@@ -27,3 +27,16 @@ p {
   font-size: 2rem;
   text-align: center;
 }
+
+.top-ten {
+  text-align: center;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  display: list-item;
+  list-style-position: inside;
+}

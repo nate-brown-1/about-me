@@ -16,9 +16,19 @@ I built a page about myself which gives the user a short pop quiz asking a serie
 
 ### Lighthouse Accessibility Report Score
 
-[Lighthouse Report](img/lighthouse-screenshot.png)
+[Lighthouse Report](img/lab02-lighthouse-screenshot.png)
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+- Class provided ESLint file was modified with the following addition to permit use of template literals enclosed in backticks (`)
+
+``` JSON
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "exceptions": {
+          "allowTemplateLiterals": true
+        }
+      }
+```

@@ -25,7 +25,12 @@
     ],
     "quotes": [
       "warn",
-      "single"
+      "single",
+      {
+        "exceptions": {
+          "allowTemplateLiterals": true
+        }
+      }
     ],
     "no-multi-spaces": [
       "warn",
