@@ -6,8 +6,8 @@ I built a page about myself which gives the user a short pop quiz asking a serie
 
 ### Author: Student/Group Name
 
-Code written by Nate Brown
-Based on demo code written in class by Sheyna Watkins
+- Code written by Nate Brown
+- Based on demo code written in class by Sheyna Watkins
 
 ### Links and Resources
 
