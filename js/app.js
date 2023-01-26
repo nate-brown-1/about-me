@@ -43,6 +43,8 @@ console.log(`user has ${userScore} correct answers so far`);
 let nateService = prompt('Was Nate in the Air Force? (Yes/No)').toLowerCase();
 console.log('Was Nate in the Air Force: ' + nateService);
 
+function army(){
+
 if ( nateService === 'yes' || nateService === 'y' ) {
   // console.log('Wrong, Nate was never in the Air Force.');
   window.alert('Wrong, Nate was never in the Air Force.');
@@ -55,11 +57,18 @@ if ( nateService === 'yes' || nateService === 'y' ) {
   // console.log('Please try again. Acceptable answers are yes or no.');
   window.alert('Please try again. Acceptable answers are yes or no.');
 }
+
+}
+
+army(nateService);
+
 console.log(`user has ${userScore} correct answers so far`);
 
 // question 3 of 5
 let nateCollege = prompt('Did Nate attend college in Washington State? (Yes/No)').toLowerCase();
 console.log('Did Nate attend college in Washington: ' + nateCollege);
+
+function college(){
 
 if ( nateCollege === 'yes' || nateCollege === 'y' ) {
   // console.log('Correct, Nate went to college in Bellevue, WA.');
@@ -73,6 +82,9 @@ if ( nateCollege === 'yes' || nateCollege === 'y' ) {
   // console.log('Please try again. Acceptable answers are yes or no.');
   window.alert('Please try again. Acceptable answers are yes or no.');
 }
+}
+college(nateCollege);
+
 console.log(`user has ${userScore} correct answers so far`);
 
 // question 4 of 5
