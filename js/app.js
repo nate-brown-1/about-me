@@ -1,7 +1,5 @@
 'use strict';
 
-/*
-
 // request user name
 let userName = prompt('What is your name?');
 
@@ -188,5 +186,3 @@ window.alert(`Thank you for answering these questions, ${userName}. You answered
 // Stretch Goals 2/2
 // Attempt to make your code more DRY by putting all of the questions, answers, and responses to the first five yes/no questions into arrays (or even one huge multidimensional array), and modifying the game logic such that a ‘for’ loop will control the flow from question to question.
 // NOT HAPPENING TONIGHT LOL
-
-*/
