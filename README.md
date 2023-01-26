@@ -1,4 +1,4 @@
-# LAB - 2
+# LAB - 3
 
 ## About Me
 
@@ -12,14 +12,17 @@ I built a page about myself which gives the user a short pop quiz asking a serie
 ### Links and Resources
 
 - I used this site to make the header flex box with vertical/horizontal centering
-  - https://www.w3docs.com/snippets/css/how-to-vertically-center-text-with-css.html
+  - <https://www.w3docs.com/snippets/css/how-to-vertically-center-text-with-css.html>
+- Random number generator made with help from this site
+  - <https://www.w3schools.com/js/js_random.asp>
 
 ### Lighthouse Accessibility Report Score
 
-[Lighthouse Report](img/lab02-lighthouse-screenshot.png)
+![Lighthouse Report](img/lab03-lighthouse-screenshot.png)
 
 ### Reflections and Comments
 
+- CSS still needs help but no time
 - Class provided ESLint file was modified with the following addition to permit use of template literals enclosed in backticks (`)
 
 ``` JSON
