@@ -91,6 +91,7 @@ console.log(`user has ${userScore} correct answers so far`);
 let nateTravel = prompt('Does Nate plan to visit Australia? (Yes/No)').toLowerCase();
 console.log('Does Nate plan to visit Australia: ' + nateTravel);
 
+function travel(){
 if ( nateTravel === 'yes' || nateTravel === 'y' ) {
   // console.log('Wrong, Nate does not plan to visit Australia.');
   window.alert('Wrong, Nate does not plan to visit Australia.');
@@ -103,12 +104,17 @@ if ( nateTravel === 'yes' || nateTravel === 'y' ) {
   // console.log('Please try again. Acceptable answers are yes or no.');
   window.alert('Please try again. Acceptable answers are yes or no.');
 }
+
+}
+travel(nateTravel);
+
 console.log(`user has ${userScore} correct answers so far`);
 
 // question 5 of 5
 let nateRace = prompt('Does Nate plan to enter a motorcycle race? (Yes/No)').toLowerCase();
 console.log('Does Nate plan to enter a motorcycle race: ' + nateRace);
 
+function race(){
 if ( nateRace === 'yes' || nateRace === 'y' ) {
   // console.log('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
   window.alert('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
@@ -121,6 +127,10 @@ if ( nateRace === 'yes' || nateRace === 'y' ) {
   // console.log('Please try again. Acceptable answers are yes or no.');
   window.alert('Please try again. Acceptable answers are yes or no.');
 }
+}
+
+race(nateRace);
+
 console.log(`user has ${userScore} correct answers so far`);
 
 // Stretch Goals (1/2)
