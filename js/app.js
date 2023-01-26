@@ -153,30 +153,38 @@ console.log(randomNumber);
 // indicate if guess is too low, too high, or not a number
 // exit loop immediately on correct guess
 
-let attemptsRemaining = 4;
 
-while (attemptsRemaining) {
-  let numberGuessed = prompt(`Guess a number between 1 and 10. You get ${attemptsRemaining} attempts!`);
-  console.log(numberGuessed);
-  if (numberGuessed == randomNumber) {
-    window.alert(`Congratulations, you're a genius!`);
-    // increment userScore for correctly answered question
-    userScore++;
-    attemptsRemaining = 0;
-  } else if (numberGuessed < randomNumber) {
-    window.alert(`That's too low! Try again!`);
-    attemptsRemaining--;
-  } else if (numberGuessed > randomNumber) {
-    window.alert(`That's too high! Try again!`);
-    attemptsRemaining--;
-  } else {
-    window.alert(`That's not a number, weirdo! Guess a number between 1 and 10!`);
-    attemptsRemaining--;
-  }
-}
-console.log(`user has ${userScore} correct answers so far`);
+// loop does not work as a function!!!!
 
-window.alert(`The right answer was ${randomNumber}. Thank you for playing!`);
+// let attemptsRemaining = 4;
+// function guess(){
+// while (attemptsRemaining) {
+//   let numberGuessed = prompt(`Guess a number between 1 and 10. You get ${attemptsRemaining}   attempts!`);
+//   console.log(numberGuessed);
+
+//   if (numberGuessed == randomNumber) {
+//     window.alert(`Congratulations, you're a genius!`);
+//     // increment userScore for correctly answered question
+//     userScore++;
+//     attemptsRemaining = 0;
+//   } else if (numberGuessed < randomNumber) {
+//     window.alert(`That's too low! Try again!`);
+//     attemptsRemaining--;
+//   } else if (numberGuessed > randomNumber) {
+//     window.alert(`That's too high! Try again!`);
+//     attemptsRemaining--;
+//   } else {
+//     window.alert(`That's not a number, weirdo! Guess a number between 1 and 10!`);
+//     attemptsRemaining--;
+//   }
+// }
+// }
+
+// guess(numberGuessed);
+
+// console.log(`user has ${userScore} correct answers so far`);
+
+// window.alert(`The right answer was ${randomNumber}. Thank you for playing!`);
 
 // As a user, I would like to guess the answer to a question that could have many possibilities so that I can have fun with with a guessing game. DONE
 // Add a 7th question that has multiple possible correct answers that are stored in an array. DONE
@@ -185,25 +193,33 @@ window.alert(`The right answer was ${randomNumber}. Thank you for playing!`);
 // Display all the possible correct answers to the user. DONE
 // Consider using a loop of some sort for this question. DONE
 
-let arrayAttemptsRemaining = 6;
-const arrayAnswers = ['pine','fir','spruce','larch','cedar'];
+// This function does not work with this function!!!!!
 
-while (arrayAttemptsRemaining) {
-  let treeGuessed = prompt(`Name a type of coniferous tree. You get ${arrayAttemptsRemaining} attempts!`).toLowerCase();
-  console.log(treeGuessed);
-  if (treeGuessed === arrayAnswers[0] || treeGuessed === arrayAnswers[1] || treeGuessed === arrayAnswers[2] || treeGuessed === arrayAnswers[3] || treeGuessed === arrayAnswers[4]) {
-    window.alert('You paid attention in Biology!');
-    // increment userScore for correctly answered question
-    userScore++;
-    arrayAttemptsRemaining = 0;
-  } else {
-    window.alert(`This is the Pacific Northwest, you should know better!`);
-    arrayAttemptsRemaining--;
-  }
-}
-console.log(`user has ${userScore} correct answers so far`);
+// let arrayAttemptsRemaining = 6;
+// const arrayAnswers = ['pine','fir','spruce','larch','cedar'];
+// let treeGuessed;
 
-window.alert(`Correct answers were ${arrayAnswers[0]}, ${arrayAnswers[1]}, ${arrayAnswers[2]}, ${arrayAnswers[3]}, and ${arrayAnswers[4]}.`);
+// function tree(){
+// while (arrayAttemptsRemaining) {
+//   let treeGuessed = prompt(`Name a type of coniferous tree. You get ${arrayAttemptsRemaining} attempts!`).toLowerCase();
+// console.log(treeGuessed);
+
+//   if (treeGuessed === arrayAnswers[0] || treeGuessed === arrayAnswers[1] || treeGuessed === arrayAnswers[2] || treeGuessed === arrayAnswers[3] || treeGuessed === arrayAnswers[4]) {
+//     window.alert('You paid attention in Biology!');
+//     // increment userScore for correctly answered question
+//     userScore++;
+//     arrayAttemptsRemaining = 0;
+//   } else {
+//     window.alert(`This is the Pacific Northwest, you should know better!`);
+//     arrayAttemptsRemaining--;
+//   }
+// }
+// }
+// tree(treeGuessed);
+
+// console.log(`user has ${userScore} correct answers so far`);
+
+// window.alert(`Correct answers were ${arrayAnswers[0]}, ${arrayAnswers[1]}, ${arrayAnswers[2]}, ${arrayAnswers[3]}, and ${arrayAnswers[4]}.`);
 
 // conclusion including user name 
 
