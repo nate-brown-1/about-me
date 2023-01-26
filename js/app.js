@@ -20,7 +20,7 @@ console.log(`user has ${userScore} correct answers so far`);
 // question 1 of 5
 let nateChild = prompt('Does Nate have a son named Jack?').toLowerCase();
 console.log('Does Nate have a son named Jack: ' + nateChild);
-
+function Jack(){
 if ( nateChild === 'yes' || nateChild === 'y' ) {
   // console.log('Correct, Jack is Nate\'s 1 year old son.');
   window.alert('Correct, Jack is Nate\'s 1 year old son.');
@@ -33,6 +33,10 @@ if ( nateChild === 'yes' || nateChild === 'y' ) {
   // console.log('Please try again. Acceptable answers are yes or no.');
   window.alert('Please try again. Acceptable answers are yes or no.');
 }
+}
+
+Jack(nateChild);
+
 console.log(`user has ${userScore} correct answers so far`);
 
 // question 2 of 5
