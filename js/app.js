@@ -88,6 +88,12 @@ if ( nateRace === 'yes' || nateRace === 'y' ) {
 let randomNumber = Math.floor(Math.random() * 10 + 1);
 console.log(randomNumber);
 
+
+// Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number. DONE
+// Indicates through an alert if the guess is “too high” or “too low”. DONE
+// It should give the user exactly four opportunities to get the correct answer. DONE
+// After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort. DONE
+
 // give user 4 attempts to guess a number between 1 and 10
 // indicate if guess is too low, too high, or not a number
 // exit loop immediately on correct guess
@@ -112,21 +118,33 @@ while (attemptsRemaining) {
   }
 }
 
+window.alert(`The right answer was ${randomNumber}. Thank you for playing!`);
 
-// As a user, I would like to view a series of data related to the site owners interest so that the I can quickly view more information about them.
-// Create a “Top Ten” at the bottom of your HTML page as an ordered list in HTML. Some ideas that you can include could be top ten movies, top ten favorite places, or top ten places to visit. You may choose to do whatever top ten list that you wish.
-// Convert your work experience and education summary into an unordered list using HTML
-// As a user, I would like to be guided to an answer through a series of feedback responses so that I can learn more about the site owner.
-// Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
-// Indicates through an alert if the guess is “too high” or “too low”.
-// It should give the user exactly four opportunities to get the correct answer.
-// After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
 // As a user, I would like to guess the answer to a question that could have many possibilities so that I can have fun with with a guessing game.
-// Add a 7th question that has multiple possible correct answers that are stored in an array.
-// Give the user 6 attempts to guess the correct answer.
-// The guesses will end once the user guesses a correct answer or they run out of attempts.
-// Display all the possible correct answers to the user.
-// Consider using a loop of some sort for this question.
+// Add a 7th question that has multiple possible correct answers that are stored in an array. DONE
+
+let arrayAttemptsRemaining = 6;
+const arrayAnswers = ['pine','fir','spruce','larch','cedar'];
+
+while (arrayAttemptsRemaining) {
+  let treeGuessed = prompt(`Name a type of coniferous tree. You get ${arrayAttemptsRemaining} attempts!`).toLowerCase();
+  console.log(treeGuessed);
+  if (treeGuessed === arrayAnswers[0] || treeGuessed === arrayAnswers[1] || treeGuessed === arrayAnswers[2] || treeGuessed === arrayAnswers[3] || treeGuessed === arrayAnswers[4]) {
+    window.alert('You paid attention in Biology!');
+    arrayAttemptsRemaining = 0;
+  } else {
+    window.alert(`This is the Pacific Northwest, you should know better!`);
+    arrayAttemptsRemaining--;
+  }
+}
+
+window.alert(`Correct answers were ${arrayAnswers[0]}, ${arrayAnswers[1]}, ${arrayAnswers[2]}, ${arrayAnswers[3]}, and ${arrayAnswers[4]}.`);
+
+// Give the user 6 attempts to guess the correct answer. DONE
+// The guesses will end once the user guesses a correct answer or they run out of attempts. DONE
+// Display all the possible correct answers to the user. DONE
+// Consider using a loop of some sort for this question. DONE
+
 // As a user, I would like to know my final score so that I can know how well I did.
 // Keep track of the total number of correct answers. At the end tell them how many they got correct out of the 7 questions asked.
 // Using Lighthouse in the Chrome DevTools, analyze the accessibility of your application.
@@ -140,4 +158,5 @@ while (attemptsRemaining) {
 // Attempt to make your code more DRY by putting all of the questions, answers, and responses to the first five yes/no questions into arrays (or even one huge multidimensional array), and modifying the game logic such that a ‘for’ loop will control the flow from question to question.
 
 // conclusion including user name 
-window.alert('Thank you for answering, ' + userName + '. Feel free to browse the bio on my page.');
+
+window.alert(`Thank you for answering these questions, ${userName}. Feel free to browse the bio on my page.`);
