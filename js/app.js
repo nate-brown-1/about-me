@@ -35,8 +35,6 @@ if ( nateChild === 'yes' || nateChild === 'y' ) {
 }
 }
 
-Jack(nateChild);
-
 console.log(`user has ${userScore} correct answers so far`);
 
 // question 2 of 5
