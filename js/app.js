@@ -20,20 +20,22 @@ console.log(`user has ${userScore} correct answers so far`);
 // question 1 of 5
 let nateChild = prompt('Does Nate have a son named Jack?').toLowerCase();
 console.log('Does Nate have a son named Jack: ' + nateChild);
-function Jack(){
-if ( nateChild === 'yes' || nateChild === 'y' ) {
-  // console.log('Correct, Jack is Nate\'s 1 year old son.');
-  window.alert('Correct, Jack is Nate\'s 1 year old son.');
-  // increment userScore for correctly answered question
-  userScore++;
-} else if ( nateChild === 'no' || nateChild === 'n' ) {
-  // console.log('Wrong, Nate\'s son is named Jack.');
-  window.alert('Wrong, Nate\'s son is named Jack.');
-} else {
-  // console.log('Please try again. Acceptable answers are yes or no.');
-  window.alert('Please try again. Acceptable answers are yes or no.');
+
+function jack() {
+  if ( nateChild === 'yes' || nateChild === 'y' ) {
+    // console.log('Correct, Jack is Nate\'s 1 year old son.');
+    window.alert('Correct, Jack is Nate\'s 1 year old son.');
+    // increment userScore for correctly answered question
+    userScore++;
+  } else if ( nateChild === 'no' || nateChild === 'n' ) {
+    // console.log('Wrong, Nate\'s son is named Jack.');
+    window.alert('Wrong, Nate\'s son is named Jack.');
+  } else {
+    // console.log('Please try again. Acceptable answers are yes or no.');
+    window.alert('Please try again. Acceptable answers are yes or no.');
+  }
 }
-}
+jack(nateChild);
 
 console.log(`user has ${userScore} correct answers so far`);
 
@@ -41,23 +43,20 @@ console.log(`user has ${userScore} correct answers so far`);
 let nateService = prompt('Was Nate in the Air Force? (Yes/No)').toLowerCase();
 console.log('Was Nate in the Air Force: ' + nateService);
 
-function army(){
-
-if ( nateService === 'yes' || nateService === 'y' ) {
-  // console.log('Wrong, Nate was never in the Air Force.');
-  window.alert('Wrong, Nate was never in the Air Force.');
-} else if ( nateService === 'no' || nateService === 'n' ) {
-  // console.log('Correct, Nate was in the Army, not the Air Force.');
-  window.alert('Correct, Nate was in the Army, not the Air Force.');
-  // increment userScore for correctly answered question
-  userScore++;
-} else {
-  // console.log('Please try again. Acceptable answers are yes or no.');
-  window.alert('Please try again. Acceptable answers are yes or no.');
+function army() {
+  if ( nateService === 'yes' || nateService === 'y' ) {
+    // console.log('Wrong, Nate was never in the Air Force.');
+    window.alert('Wrong, Nate was never in the Air Force.');
+  } else if ( nateService === 'no' || nateService === 'n' ) {
+    // console.log('Correct, Nate was in the Army, not the Air Force.');
+    window.alert('Correct, Nate was in the Army, not the Air Force.');
+    // increment userScore for correctly answered question
+    userScore++;
+  } else {
+    // console.log('Please try again. Acceptable answers are yes or no.');
+    window.alert('Please try again. Acceptable answers are yes or no.');
+  }
 }
-
-}
-
 army(nateService);
 
 console.log(`user has ${userScore} correct answers so far`);
@@ -66,20 +65,19 @@ console.log(`user has ${userScore} correct answers so far`);
 let nateCollege = prompt('Did Nate attend college in Washington State? (Yes/No)').toLowerCase();
 console.log('Did Nate attend college in Washington: ' + nateCollege);
 
-function college(){
-
-if ( nateCollege === 'yes' || nateCollege === 'y' ) {
-  // console.log('Correct, Nate went to college in Bellevue, WA.');
-  window.alert('Correct, Nate went to college in Bellevue, WA.');
-  // increment userScore for correctly answered question
-  userScore++;
-} else if ( nateCollege === 'no' || nateCollege === 'n' ) {
-  // console.log('Wrong, Nate went to college in Bellevue, WA.') ;
-  window.alert('Wrong, Nate went to college in Bellevue, WA.') ;
-} else {
-  // console.log('Please try again. Acceptable answers are yes or no.');
-  window.alert('Please try again. Acceptable answers are yes or no.');
-}
+function college() {
+  if ( nateCollege === 'yes' || nateCollege === 'y' ) {
+    // console.log('Correct, Nate went to college in Bellevue, WA.');
+    window.alert('Correct, Nate went to college in Bellevue, WA.');
+    // increment userScore for correctly answered question
+    userScore++;
+  } else if ( nateCollege === 'no' || nateCollege === 'n' ) {
+    // console.log('Wrong, Nate went to college in Bellevue, WA.') ;
+    window.alert('Wrong, Nate went to college in Bellevue, WA.') ;
+  } else {
+    // console.log('Please try again. Acceptable answers are yes or no.');
+    window.alert('Please try again. Acceptable answers are yes or no.');
+  }
 }
 college(nateCollege);
 
@@ -89,20 +87,19 @@ console.log(`user has ${userScore} correct answers so far`);
 let nateTravel = prompt('Does Nate plan to visit Australia? (Yes/No)').toLowerCase();
 console.log('Does Nate plan to visit Australia: ' + nateTravel);
 
-function travel(){
-if ( nateTravel === 'yes' || nateTravel === 'y' ) {
-  // console.log('Wrong, Nate does not plan to visit Australia.');
-  window.alert('Wrong, Nate does not plan to visit Australia.');
-} else if ( nateTravel === 'no' || nateTravel === 'n' ) {
-  // console.log('Correct, Nate plans to visit Europe, not Australia.');
-  window.alert('Correct, Nate plans to visit Europe, not Australia.');
-  // increment userScore for correctly answered question
-  userScore++;
-} else {
-  // console.log('Please try again. Acceptable answers are yes or no.');
-  window.alert('Please try again. Acceptable answers are yes or no.');
-}
-
+function travel() {
+  if ( nateTravel === 'yes' || nateTravel === 'y' ) {
+    // console.log('Wrong, Nate does not plan to visit Australia.');
+    window.alert('Wrong, Nate does not plan to visit Australia.');
+  } else if ( nateTravel === 'no' || nateTravel === 'n' ) {
+    // console.log('Correct, Nate plans to visit Europe, not Australia.');
+    window.alert('Correct, Nate plans to visit Europe, not Australia.');
+    // increment userScore for correctly answered question
+    userScore++;
+  } else {
+    // console.log('Please try again. Acceptable answers are yes or no.');
+    window.alert('Please try again. Acceptable answers are yes or no.');
+  }
 }
 travel(nateTravel);
 
@@ -112,21 +109,20 @@ console.log(`user has ${userScore} correct answers so far`);
 let nateRace = prompt('Does Nate plan to enter a motorcycle race? (Yes/No)').toLowerCase();
 console.log('Does Nate plan to enter a motorcycle race: ' + nateRace);
 
-function race(){
-if ( nateRace === 'yes' || nateRace === 'y' ) {
-  // console.log('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
-  window.alert('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
-} else if ( nateRace === 'no' || nateRace === 'n' ) {
-  // console.log('Correct, Nate actually races triathlons.');
-  window.alert('Correct, Nate actually races triathlons.');
-  // increment userScore for correctly answered question
-  userScore++;
-} else {
-  // console.log('Please try again. Acceptable answers are yes or no.');
-  window.alert('Please try again. Acceptable answers are yes or no.');
+function race() {
+  if ( nateRace === 'yes' || nateRace === 'y' ) {
+    // console.log('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
+    window.alert('Wrong! Nate can\'t afford motorcycle racing, he only races triathlons.');
+  } else if ( nateRace === 'no' || nateRace === 'n' ) {
+    // console.log('Correct, Nate actually races triathlons.');
+    window.alert('Correct, Nate actually races triathlons.');
+    // increment userScore for correctly answered question
+    userScore++;
+  } else {
+    // console.log('Please try again. Acceptable answers are yes or no.');
+    window.alert('Please try again. Acceptable answers are yes or no.');
+  }
 }
-}
-
 race(nateRace);
 
 console.log(`user has ${userScore} correct answers so far`);
@@ -142,6 +138,8 @@ console.log(`user has ${userScore} correct answers so far`);
 let randomNumber = Math.floor(Math.random() * 10 + 1);
 console.log(randomNumber);
 
+// question 6 of 7, working function with loop
+
 // Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number. DONE
 // Indicates through an alert if the guess is “too high” or “too low”. DONE
 // It should give the user exactly four opportunities to get the correct answer. DONE
@@ -151,38 +149,35 @@ console.log(randomNumber);
 // indicate if guess is too low, too high, or not a number
 // exit loop immediately on correct guess
 
+let attemptsRemaining = 4;
+let numberGuessed;
 
-// loop does not work as a function!!!!
+function guess() {
+  while (attemptsRemaining) {
+    let numberGuessed = prompt(`Guess a number between 1 and 10. You get ${attemptsRemaining} attempts!`);
+    console.log(numberGuessed);
+    if (numberGuessed == randomNumber) {
+       window.alert(`Congratulations, you're a genius!`);
+    // increment userScore for correctly answered question
+    userScore++;
+    attemptsRemaining = 0;
+  } else if (numberGuessed < randomNumber) {
+    window.alert(`That's too low! Try again!`);
+    attemptsRemaining--;
+  } else if (numberGuessed > randomNumber) {
+    window.alert(`That's too high! Try again!`);
+    attemptsRemaining--;
+  } else {
+    window.alert(`That's not a number, weirdo! Guess a number between 1 and 10!`);
+    attemptsRemaining--;
+  }
+}
+}
+guess();
 
-// let attemptsRemaining = 4;
-// function guess(){
-// while (attemptsRemaining) {
-//   let numberGuessed = prompt(`Guess a number between 1 and 10. You get ${attemptsRemaining}   attempts!`);
-//   console.log(numberGuessed);
+console.log(`user has ${userScore} correct answers so far`);
 
-//   if (numberGuessed == randomNumber) {
-//     window.alert(`Congratulations, you're a genius!`);
-//     // increment userScore for correctly answered question
-//     userScore++;
-//     attemptsRemaining = 0;
-//   } else if (numberGuessed < randomNumber) {
-//     window.alert(`That's too low! Try again!`);
-//     attemptsRemaining--;
-//   } else if (numberGuessed > randomNumber) {
-//     window.alert(`That's too high! Try again!`);
-//     attemptsRemaining--;
-//   } else {
-//     window.alert(`That's not a number, weirdo! Guess a number between 1 and 10!`);
-//     attemptsRemaining--;
-//   }
-// }
-// }
-
-// guess(numberGuessed);
-
-// console.log(`user has ${userScore} correct answers so far`);
-
-// window.alert(`The right answer was ${randomNumber}. Thank you for playing!`);
+window.alert(`The right answer was ${randomNumber}. Thank you for playing!`);
 
 // As a user, I would like to guess the answer to a question that could have many possibilities so that I can have fun with with a guessing game. DONE
 // Add a 7th question that has multiple possible correct answers that are stored in an array. DONE
@@ -191,33 +186,30 @@ console.log(randomNumber);
 // Display all the possible correct answers to the user. DONE
 // Consider using a loop of some sort for this question. DONE
 
-// This function does not work with this function!!!!!
+let arrayAttemptsRemaining = 6;
+const arrayAnswers = ['pine','fir','spruce','larch','cedar'];
+let treeGuessed;
 
-// let arrayAttemptsRemaining = 6;
-// const arrayAnswers = ['pine','fir','spruce','larch','cedar'];
-// let treeGuessed;
+function tree() {
+  while (arrayAttemptsRemaining) {
+    let treeGuessed = prompt(`Name a type of coniferous tree. You get ${arrayAttemptsRemaining} attempts!`).toLowerCase();
+    console.log(treeGuessed);
+    if (treeGuessed === arrayAnswers[0] || treeGuessed === arrayAnswers[1] || treeGuessed === arrayAnswers[2] || treeGuessed === arrayAnswers[3] || treeGuessed === arrayAnswers[4]) {
+      window.alert('You paid attention in Biology!');
+      // increment userScore for correctly answered question
+      userScore++;
+      arrayAttemptsRemaining = 0;
+    } else {
+      window.alert(`This is the Pacific Northwest, you should know better!`);
+      arrayAttemptsRemaining--;
+    }
+  }
+}
+tree();
 
-// function tree(){
-// while (arrayAttemptsRemaining) {
-//   let treeGuessed = prompt(`Name a type of coniferous tree. You get ${arrayAttemptsRemaining} attempts!`).toLowerCase();
-// console.log(treeGuessed);
+console.log(`user has ${userScore} correct answers so far`);
 
-//   if (treeGuessed === arrayAnswers[0] || treeGuessed === arrayAnswers[1] || treeGuessed === arrayAnswers[2] || treeGuessed === arrayAnswers[3] || treeGuessed === arrayAnswers[4]) {
-//     window.alert('You paid attention in Biology!');
-//     // increment userScore for correctly answered question
-//     userScore++;
-//     arrayAttemptsRemaining = 0;
-//   } else {
-//     window.alert(`This is the Pacific Northwest, you should know better!`);
-//     arrayAttemptsRemaining--;
-//   }
-// }
-// }
-// tree(treeGuessed);
-
-// console.log(`user has ${userScore} correct answers so far`);
-
-// window.alert(`Correct answers were ${arrayAnswers[0]}, ${arrayAnswers[1]}, ${arrayAnswers[2]}, ${arrayAnswers[3]}, and ${arrayAnswers[4]}.`);
+window.alert(`Correct answers were ${arrayAnswers[0]}, ${arrayAnswers[1]}, ${arrayAnswers[2]}, ${arrayAnswers[3]}, and ${arrayAnswers[4]}.`);
 
 // conclusion including user name 
 
