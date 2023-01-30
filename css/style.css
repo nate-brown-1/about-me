@@ -1,3 +1,8 @@
+/* include margin and padding in element sizes */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightblue;
 }
