@@ -18,7 +18,9 @@ I built a page about myself which gives the user a short pop quiz asking a serie
 
 ### Lighthouse Accessibility Report Score
 
-![Lighthouse Report](img/lab03-lighthouse-screenshot.png)
+Report obtained Sun Jan 29 2226
+
+![Lighthouse Report](img/lab05b-lighthouse-screenshot.png)
 
 ### Reflections and Comments
 
